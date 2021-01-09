@@ -779,7 +779,8 @@ button.glider-prev, button.glider-next{
         border: 2px solid #871310;
         margin-top: 30vh;
         margin-bottom: 30vh;
-        width:90%
+        width:90%;
+        height: initial;
     }
     .dropbtn{
         border: 2px solid black;
