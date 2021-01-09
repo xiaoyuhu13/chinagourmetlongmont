@@ -1,0 +1,795 @@
+/**********************/
+/* HOURS AND LOCATION */
+/**********************/
+
+/*center everything*/
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+}
+
+/*buttons*/
+.insta, .fb{
+    display:flex;
+    flex-direction:row;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width:fit-content;
+    text-decoration: none;
+}
+.fb-image, .insta-image{
+    height:fit-content;
+    padding:2px 15px 0px 5px;
+}
+.fb-image{
+    padding-top:6px;
+   }
+.fb{
+    background-color: #4267B2;
+}
+.fb p{
+    color:#FFFFFF;
+}
+.insta{
+    background-color:#FCFBFB;
+}
+.fb p,.insta p{
+    transform: translateY(-15px);
+    padding-right:15px;
+    font-size: 20px;
+}
+
+/*info*/
+.info{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color: #F1E1C8;
+    width:100%;
+    padding-top:70px;
+}
+.hours, .location, .contact{
+    padding: 5vh 5vw 8vh 0vw;
+    transform: translateX(15%);
+}
+.info .insta{
+    margin-bottom: 15px;
+}
+
+/*map*/
+iframe{
+    margin: 10vh 0vw 10vh 0vw;
+}
+
+
+/*footer*/
+.footer{
+    text-align:center;
+    background-color: #2D3032;
+    width:100%;
+}
+.copyright{
+    color: #C4C4C4
+}
+.socials{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0px 20px 0px;
+}
+.footer .insta, .footer .fb{
+    margin: 0px 15px 0px 15px;
+}
+
+/*mobile*/
+@media (max-width:490px){
+    #orderBtn2{
+        display: none;
+    }
+    .info{
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: initial;
+        margin-top:20px;
+    }
+    .hours, .location, .contact{
+        transform: translateX(0);
+        padding:0px;
+    }
+    .info p{
+        line-height:initial;
+    }
+    .contact-socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contact-socials .fb{
+        margin-left: 10px;
+    }
+    .contact-socials .insta{
+        margin-right: 10px;
+        background: #2D3032;
+    }
+    iframe{
+        width: 100%;
+    }
+    .mobile-decor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .brown-line{
+        background-color: #D1BC99;
+        width: 20vw;
+        height: 1vh;
+        margin: 0vh 5vw;
+        border-radius: 3px;
+    }
+    
+
+}
+
+
+
+
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+
+
+
+/******/
+/*HOME*/
+/******/
+h3{
+    font-family: "PT Sans Caption";
+    font-size: 25px;
+    line-height: 200%;
+    color: #2D3032; 
+    font-weight: bold;
+}
+p{
+    font-family: "PT Sans Caption";
+    font-size: 20px;
+    line-height: 200%;
+    color: #2D3032;
+}
+
+
+/*navbar*/
+.topnav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background: #2D3032;
+    position:fixed;
+    z-index:6;
+    align-items: center;
+}
+
+.logo{
+    max-height: 60px;
+    padding: 5px 10px 0px 0px;
+}
+
+.topnav p{
+    float: left;
+    padding: 15px 18px 18px 15px;
+    text-decoration: none;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 200%;
+/* or 40px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.topnav p:hover{
+    color: grey;
+}
+
+.order{
+    background: #EDB259;
+    font-family: PT Sans Caption;
+    padding: 0px 35px 0px 35px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 200%;
+    text-decoration: none;
+    border: none;
+    margin-top: 36px;
+    margin-right: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/*landing page*/
+.carasoul {
+    width: 100%;
+    background-image: url("../images/wok.png");
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:70px;
+}
+.darken{
+    height: 90vh;
+    width: 100%;
+    background: rgba(36, 25, 25, 0.58);
+    position: absolute;
+    margin-top: 70px;
+    z-index: 0;
+    left: 0%;
+}
+
+.title{
+    font-family: Dancing Script;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 95.37px;
+    line-height: 114px;
+    color: #FFFFFF;
+    z-index: 1;
+    text-align: center;
+}
+
+.blrb{
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.25px;
+    line-height: 40px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.orderNow{
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.25px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background: #DEA043;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+#orderNowBtn, .title, .blrb{
+    margin: 20px 0px 20px 0px;
+}
+#orderNowBtn{
+    padding: 10px 20px 10px 20px;
+    margin-top:40px;
+}
+#orderNowBtn:hover, #orderBtn:hover{
+    color:grey;
+}
+
+/*giftcard banner*/
+.giftcard{ 
+    width: 100%;
+    height: 20vh;
+    background: #700E0B;
+}
+.giftcard-text{
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 2;
+    color: #FFFFFF;
+    opacity: 1;
+    text-align: center;
+    transform: translateY(100%);
+    margin:0;
+}
+
+/*about info*/
+.about-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16vh 10vw 16vh 10vw;
+}
+.about-info, .about-image{
+    margin: 0vw 2vw 0vh 2vw;
+}
+.about-info{
+    font-size: 1.66rem;
+}
+.about-image{
+    height:55vh;
+}
+.about-info p{
+    transform: translateY(-3%);
+}
+.locationBtn{
+    text-decoration: none;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #871310;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+}
+.mobile-about, .mobile-nav{
+    display: none;
+}
+
+
+
+
+
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+
+/***********/
+/* Pop ups */
+/***********/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 7;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 3;
+ }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 40px 50px;
+    border: 1px solid #888;
+    width: 620px;
+}
+
+#myModal1 .modal-content{
+    width:700px;
+    padding-right:15px;
+}
+.order-popup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    transform: translate(10px, 20px);
+
+}
+
+.pickup h3, .pickup p{
+    color: #2D3032;
+    padding: 0px 0px 10px 0px;
+}
+.pickup p{
+    margin-top:0px;
+}
+
+.pickup p:hover{
+    color: #2D3032;
+}
+
+a.grubhub, a.ubereats, a.doordash{
+    margin: 5px 0px;
+}
+a.viewmenu{
+    background: #871310;
+    border-radius: 10px;
+    padding: 0px 5px 0px 15px;
+    width:120px;
+    margin-left:45px;
+    transform: translateX(-20px);
+}
+a.viewmenu p{
+    color:white;
+    padding:0;
+    margin:0;
+}
+a.viewmenu p:hover{
+    color:grey;
+}
+.pickup, .delivery{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0px 40px;
+    padding-bottom:20px;
+    text-align: center;
+}
+.pickup{
+    margin: 0px 0px 30px 20px;
+}
+.delivery{
+    padding-right: 60px;
+    padding-left:25px;
+    border-right: 3px solid #2D3032;
+}
+.covid-text{
+    border: 3px solid #871310;
+    padding: 50px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translate(0px, -20px);
+
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translate(20px, -20px);
+}
+  
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeC {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translate(20px, -20px);
+}
+  
+.closeC:hover,
+.closeC:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.closeM {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closeM:hover,
+.closeM:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mobile-navbar{
+    display:none;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #2D3032;
+    text-align: center;
+}
+.mobile-navbar p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #D1BC99;
+    margin:0 auto;
+    padding: 10px;
+    width:60vw;
+}
+.mobile-navbar a{
+    text-decoration:none;
+}
+.text-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+}
+.closeM{
+    transform: translate(-25px, 15px);
+}
+.top-border{
+    border-top: 2px solid #D1BC99;
+}
+
+
+
+
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+
+
+
+
+
+
+
+/*********/
+/* MENU */
+/********/
+
+/*background*/
+.brown-rectangle{
+    background-color: #F1E1C8;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    z-index: -1;
+}
+.brown-triangle{
+    width: 0;
+    height: 0;
+    border-top: 50vh solid transparent;
+    border-right: 100vw solid #F1E1C8;
+    border-bottom: 50vh solid transparent;
+    position:absolute;
+    z-index: -1;
+}
+
+/*glider*/
+.glider-container{
+    height: 70%;
+    width:70%;
+    border:5px solid #871310;
+    border-radius:10px;
+    margin: 400px 50px 250px 50px;
+}
+.glider img{
+    border-right: 3px solid #2D3032;
+}
+.glider img:last-child{
+    border: 0;
+}
+
+/*buttons*/
+button.glider-prev, button.glider-next{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #871310;
+    border-radius: 10px;
+    color:#FFFFFF;
+    padding: 0px 15px;
+    margin-top: 20vh;
+    transform: translateY(50vh);
+
+}
+.glider-prev p, .glider-next p{
+    color:#FFFFFF;
+    padding:0px 10px;
+}
+.glider-prev p:hover, .glider-next p:hover{
+    color:grey;
+}
+.dropbtn{
+    background: #871310;
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    font-family: "PT Sans Caption";
+    font-weight: bold;
+    border: 5px solid black;
+    cursor: pointer;
+    width: 14vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-chevron-down{
+    padding-left:10px;
+}
+
+.dropbtn:hover{
+    color:grey;
+}
+
+.dropdown{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    z-index: 3;
+}
+
+
+
+
+/*Mobile Home*/
+
+@media (max-width:490px){
+    p{
+        font-size:16px;
+    }
+    h3{
+        font-size: 20px;
+    }
+   .topnav p, #orderBtn{
+       display:none;
+   }
+   .about-section{
+    flex-wrap: wrap;
+    text-align: center;
+   }
+   .about-image{
+       width:90%;
+       height:50%;
+   }
+   .title{
+       font-size:48.83px;
+       line-height: 1.2;
+       text-align: center;
+   }
+   .blrb, #orderNowBtn{
+       font-size: 20px;
+   }
+   .giftcard-text{
+       font-size: 16px;
+       transform:translateY(10%);
+       line-height: 2;
+       padding: 0px 28px;
+   }
+   .about-info p{
+       text-align: left;
+       padding:2.5vh;
+   }
+   .locationBtn{
+       font-size: 16px;
+   }
+   .mobile-about, .mobile-nav{
+       display: block;
+   }
+   .screen-about{
+       display:none;
+   }
+   .about-section{
+       padding-top:0.5vh;
+   }
+   .fb p, .insta p{
+       display:none;
+   }
+   .fb{
+    padding: 3px 4px 2px 5px;
+   }
+   .insta-image{
+       padding: 0px;
+   }
+   .insta{
+       padding: 2px 5px;
+   }
+   .socials{
+       padding: 40px 0px 15px 0px;
+   }
+   .topnav{
+       align-items: center;
+   }
+   .mobile-nav{
+       transform: translateX(-20px)
+   }
+   .modal-content{
+       width:50%;
+       margin:20% auto;
+   }
+   .covid-text{
+       border-right:none;
+       border-left:none;
+       padding:15px 0px;
+   }
+   .mobile-popup{
+       background-color: #2D3032;
+        height: 100%;
+        width:100%;
+        position:absolute;
+        top:0px;
+        left:0px;
+   }
+   .pickup h3, .delivery h3 {
+       display: block;
+       font-size: 20px;
+       width:200px;
+       margin: 20px 0px 5px 0px;
+   } 
+    .viewmenu, .pickup p{
+       display: block;
+       font-size: 16px;
+   }
+
+   a.viewmenu{
+       width: 95px;
+   }
+    .order-popup{
+       flex-direction: column;
+       align-items: center;
+       transform: translate(10px, 0px);
+   }
+    .delivery, .pickup{
+        border-right:none;
+        padding:0;
+        align-items: center;
+        margin:0;
+    }    
+    #myModal1 .modal-content{
+        width:60%;
+        padding: 10px 0px 20px 50px;
+    }
+    a.grubhub img, a.ubereats img, a.doordash img{
+        width:90%;
+    }
+    .close{
+        transform: translate(30px, -30px);
+    }
+}
+
+/*mobile menu*/
+@media (max-width:490px){
+    .glider-container{
+        border: 2px solid #871310;
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+        width:90%;
+        height: initial;
+    }
+    .dropbtn{
+        border: 2px solid black;
+        font-size: 16px;
+        width:35vw;
+        height:5vh;
+        margin-top:-2vh;
+    }
+    button.glider-prev, button.glider-next{
+        transform: translateY(50vh) scale(.7);
+    }
+}
