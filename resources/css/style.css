@@ -946,6 +946,7 @@ a.viewmenu p:hover{
 }
 .glider img{
     border-right: 3px solid #2D3032;
+    height: intrinsic;
 }
 .glider img:last-child{
     border: 0;
