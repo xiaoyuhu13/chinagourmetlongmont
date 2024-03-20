@@ -940,7 +940,7 @@ a.viewmenu p:hover{
 .glider-container{
     height: 70%;
     width:70%;
-    border:5px solid blue;
+    border:5px solid #871310;
     border-radius:10px;
     margin: 400px 50px 250px 50px;
 }
